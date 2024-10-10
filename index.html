@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter for you 🥰</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <label>
+      <div class="heart">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg"></img>
+      </div>
+      <input id="messageState" type="checkbox" style="display:none" />
+    </label>
+    <div class="message">
+      <h1>Maaayeys Happy birthday! 🤍</h1>
+      <p>
+        Hi Maayeys! Ako'to, si <strong>Keith Ralph</strong> HAHAHA! So, ayun, gusto ko lang talagang I greet ka ng
+        Happy Birthday! 🎂 Pasensya na kung wala akong masyadong effort na maibigay sa ngayon, alam mo naman, ang layo
+        kasi natin
+        sa isa’t isa. Pero syempre, kahit na ganito, hindi ako pwedeng mawalan ng paraan. 😌
+      </p>
+      <p>
+        Nandito na tayo sa digital age, kung saan halos lahat ng mga imposible noon ay posible na ngayon. Kaya
+        kahit papaano, gusto kong ipaabot sa'yo itong mensahe sa mas presentable na pamamaraan hehe. Lalo na dahil
+        pareho pa
+        tayong nasa technology course, kaya naisip ko na sa ganitong paraan ko na lang gawin para medyo rare, 'di ba?
+        HAHA.
+      </p>
+      <p>
+        Sana nag-enjoy ka sa araw mo ngayon. Hiling ko lang na maging healthy ka, both physically and mentally. Wag
+        na wag mong pababayaan ang sarili mo, okay? Alam ko marami kang ginagawa, pero mahalaga ang kalusugan
+        mo—promise, babawi ako sa'yo soon!
+      </p>
+      <p>
+        Yun lang naman for now. Ingat ka palagi dyan! Enjoy the rest of your day! 😘
+      </p>
+      <img src="bubu-dudu-bubu.gif" alt="Bear cute hehe!">
+    </div>
+  </div>
+
+  <audio id="heartSound" src="happybirthday.mp3"></audio>
+
+  <script>
+    const heartDiv = document.querySelector('.heart');
+    const heartSound = document.getElementById('heartSound');
+
+    heartDiv.addEventListener('click', () => {
+      heartSound.currentTime = 0; // Reset sound to start
+      heartSound.play(); // Play sound
+    });
+  </script>
+</body>
+
+</html>

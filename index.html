@@ -48,7 +48,12 @@
     </div>
   </div>
 
-  <audio id="heartSound" src="birthday_song.mp3"></audio>
+  <audio id="heartSound">
+  <source src="birthday_song.mp3" type="audio/mpeg">
+  <source src="birthday_song.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
 
   <script>
     const heartDiv = document.querySelector('.heart');
